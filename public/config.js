@@ -1,16 +1,16 @@
 window.Config = {
 
   // 显示标题
-  SiteName: 'Public Status',
+  SiteName: 'InsectMk的在线状态',
 
   // UptimeRobot Api Keys
   // 支持 Monitor-Specific 和 Read-Only
   ApiKeys: [
-    'ur2546554-664dc359c165881dc3bfcc55 ',
-    'm784488775-dd1ad84b209c05f8e185c33e',
-    'm784490063-7b5da437e7f1e0d67613714d',
-    'm784497419-de55aa09902ccb3ab22d548a',
-    'm784496436-71a4bf7b1e3bdf7756be131b',
+    'ur2546554-c975c95ebba55a8ea492cd99',
+    //'m784488775-dd1ad84b209c05f8e185c33e',
+    //'m784490063-7b5da437e7f1e0d67613714d',
+    //'m784497419-de55aa09902ccb3ab22d548a',
+    //'m784496436-71a4bf7b1e3bdf7756be131b',
   ],
 
   // 日志天数
@@ -22,16 +22,12 @@ window.Config = {
   // 导航栏菜单
   Navi: [
     {
-      text: 'Homepage',
-      url: 'https://status.org.cn/'
-    },
-    {
       text: 'GitHub',
-      url: 'https://github.com/yb/uptime-status'
+      url: 'https://github.com/insectmk'
     },
     {
       text: 'Blog',
-      url: 'https://abo.xyz/'
+      url: 'https://insectmk.cn/'
     },
   ],
 };
