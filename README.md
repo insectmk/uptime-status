@@ -1,12 +1,12 @@
 # uptime-status
 
-一个基于 UptimeRobot API 的在线状态面板
+一个基于 UptimeRobot API 的在线状态面板，fork自[yb/uptime-status](https://github.com/yb/uptime-status)，用来保存自己的自定义设置。
 
-<img width="1152" alt="image" src="https://user-images.githubusercontent.com/25887822/178935137-6d23521d-5894-4fb8-922d-3575be4f7abc.png">
+![image-20240511144717613](README.assets/image-20240511144717613.png)
 
 ## 事先准备
 
-- 您需要先到 [UptimeRobot](https://uptimerobot.com/ "UptimeRobot") 添加站点监控，并在 My Settings 页面获取 API Key
+- 您需要先到 [UptimeRobot](https://uptimerobot.com/ "UptimeRobot") 添加站点监控，并在 [My Settings页面](https://old.uptimerobot.com/dashboard?ref=beta-app#mySettings) 获取 API Key
 - 您需要拥有一个网站空间，常见的 Nginx / PHP 等空间即可，甚至是阿里云的 OSS 等纯静态空间也行
 
 ## 如何部署：
@@ -20,4 +20,9 @@
    - `Navi`: 导航栏的菜单列表
 - 将所有文件上传到网站空间
 
-⚠️ 如果没有修改代码的需求，您不需要 git clone 本项目，只需要下载 Release 的文件包即可。
+⚠️ 如果没有修改代码的需求，您不需要 git clone 本项目，只需要下载 [Release](https://github.com/yb/uptime-status/releases) 的文件包即可。
+
+## 个人更新
+
+1. 将时间顺序颠倒，最新数据靠右。
+
