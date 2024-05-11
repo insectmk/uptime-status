@@ -11,7 +11,7 @@
 
 ## 如何部署：
 
-- 下载并解压缩：[uptime-status.zip](https://github.com/yb/uptime-status/releases/latest/download/uptime-status.zip "uptime-status.zip") 
+- 下载并解压缩：[build.zip](https://github.com/insectmk/uptime-status/releases/latest/download/build.zip "build.zip") 
 - 修改 `config.js` 文件：
    - `SiteName`: 要显示的网站名称
    - `ApiKeys`: 从 UptimeRobot 获取的 API Key，支持 Monitor-Specific API Keys 和 Read-Only API Key
