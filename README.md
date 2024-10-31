@@ -2,7 +2,7 @@
 
 一个基于 UptimeRobot API 的在线状态面板，fork自[yb/uptime-status](https://github.com/yb/uptime-status)，用来保存自己的自定义设置。
 
-![image-20240511144717613](README.assets/image-20240511144717613.png)
+
 
 ## 事先准备
 
@@ -14,6 +14,8 @@
 - 下载并解压缩：[build.zip](https://github.com/insectmk/uptime-status/releases/latest/download/build.zip "build.zip") 
 - 修改 `config.js` 文件：
    - `SiteName`: 要显示的网站名称
+   - `ApiUrl`: API接口地址，默认[https://api.uptimerobot.com/v2/getMonitors](https://api.uptimerobot.com/v2/getMonitors)
+   - `ApiCatchTime`: 缓存时间，单位（ms），默认1分钟
    - `ApiKeys`: 从 UptimeRobot 获取的 API Key，支持 Monitor-Specific API Keys 和 Read-Only API Key
    - `CountDays`: 要显示的日志天数，建议 60 或 90，显示效果比较好
    - `ShowLink`: 是否显示站点链接
@@ -25,4 +27,5 @@
 ## 个人更新
 
 1. 将时间顺序颠倒，最新数据靠右。
+1. 接口数据缓存、自定义接口地址。
 
