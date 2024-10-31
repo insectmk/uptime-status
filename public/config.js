@@ -2,6 +2,10 @@ window.Config = {
 
   // 显示标题
   SiteName: 'InsectMk的在线状态',
+  // API接口地址：default：https://api.uptimerobot.com/v2/getMonitors
+  ApiUrl: 'https://status-api.insectmk.top',
+  // API缓存时间：单位：ms
+  ApiCatchTime: 60000,
 
   // UptimeRobot Api Keys
   // 支持 Monitor-Specific 和 Read-Only

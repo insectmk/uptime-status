@@ -24,8 +24,20 @@ export async function GetMonitors(apikey, days) {
     logs_end_date: end,
     custom_uptime_ranges: ranges.join('-'),
   };
-
-  const response = await axios.post('https://cors.status.org.cn/uptimerobot/v2/getMonitors', postdata, { timeout: 10000 });
+  // 获取数据
+  let response = {}
+  let cacheKey = 'uptime-response'
+  // 检查缓存中是否有有效的数据
+  const cachedData = localStorage.getItem(cacheKey)
+  const cacheTime = localStorage.getItem(`${cacheKey}:time`)
+  if (cachedData && cacheTime && (Date.now() - cacheTime < window.Config.ApiCatchTime)) {
+    response = JSON.parse(cachedData)
+  } else {
+    response = await axios.post(window.Config.ApiUrl, postdata, { timeout: 10000 })
+    // 将新数据存储到缓存中，并记录当前时间
+    localStorage.setItem(cacheKey, JSON.stringify(response))
+    localStorage.setItem(`${cacheKey}:time`, Date.now().toString())
+  }
   if (response.data.stat !== 'ok') throw response.data.error;
   return response.data.monitors.map((monitor) => {
 
